@@ -275,7 +275,11 @@ public class CICLOS {
             
            do{
                for (int j = 0; j <= 60; j++) {
-                   if(j>=60)
+                   if(j<=59)
+                       {
+                            System.out.println(numhora+":"+nummin+":"+j);
+                       }
+                   if(j>=60)                      
                {
                    nummin++;
                    j=0;
@@ -289,8 +293,7 @@ public class CICLOS {
                {
                    j=61;
                }
-                   System.out.println(numhora+":"+nummin+":"+j);
-                   
+               
                }            
                 
                
