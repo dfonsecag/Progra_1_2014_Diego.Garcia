@@ -204,28 +204,28 @@ public class CICLOS {
         the user enters a different rating 0 then you should add them and calculate the average.
         */
         
-     int numero;
-     int sumas=0;
-     double promedio10;    
-    
-         for (int i = 1; i != 0; i++) {
-             System.out.println("DIGITE EL NUMERO");
-        numero = Integer.parseInt(teclado.nextLine());
-        sumas+=numero;
-        if(numero<=0||numero>10)
+     int calificacion;       
+        int cont=0;
+        int sumass=0;
+        int promedioss=0;
+        do
         {
-            i=0;
-            promedio10=sumas/i;
-             System.out.println("promedio"+ promedio10); 
-        }
-             else
-        { 
-             promedio10=sumas/i;
-             System.out.println("promedio"+ promedio10); 
-        }
-              
-              }
-         
+            System.out.println("DIGITE LA NOTA o DIGITE CERO SI DESEA SALIR" );
+            calificacion= Integer.parseInt(teclado.nextLine());  
+            if (calificacion<0&&calificacion>=10)
+            {              
+                sumass+=calificacion;
+                cont++;
+                promedioss= sumass/cont;
+            }       
+            else
+            {
+                calificacion=0;
+            }
+            
+            System.out.println("EL PROMEDIO ES DE"+" "+ promedioss);
+        
+        }while(calificacion!=0);
         ///////////////////////////////////////////////////////7
         //EJERCISIO 11:
          System.out.println("//////////////////////////////////////////////////////////////");
@@ -275,7 +275,11 @@ public class CICLOS {
             
            do{
                for (int j = 0; j <= 60; j++) {
-                   if(j>=60)
+                   if(j<=59)
+                       {
+                            System.out.println(numhora+":"+nummin+":"+j);
+                       }
+                   if(j>=60)                      
                {
                    nummin++;
                    j=0;
@@ -289,8 +293,7 @@ public class CICLOS {
                {
                    j=61;
                }
-                   System.out.println(numhora+":"+nummin+":"+j);
-                   
+               
                }            
                 
                
