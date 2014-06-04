@@ -79,6 +79,7 @@ public class ejercisio2 {
         for (int i = getCadena().length()-1; i >= 0; i--) {
             Palabraanreves+= getCadena().charAt(i);            
         }
+        // el equeals es utilizad para comparar string ||/==/
         if (getCadena().equals(Palabraanreves))
         {
             return true;
