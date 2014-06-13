@@ -112,19 +112,7 @@ private String BuscarRepeticiones;
     {
        // return getvalueOf(getCadena());
     }*/
-    /*
-    metodo para  establecer mediante parametros de donde deseo ver la cadena
-    con el final que deseo.
-    */
-    public String UsoSubstring()
-    { 
-        int inicio,finale;
-        inicio = Integer.parseInt(getIncioCadena());
-        finale= Integer.parseInt(getFinalCadena());
-        String cadena;
-        cadena= getCadena().substring(inicio,finale);
-        return cadena;
-    }
+   
     /*
     metodo para invertir la cadena.
     */
