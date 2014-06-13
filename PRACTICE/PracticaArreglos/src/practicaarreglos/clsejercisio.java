@@ -138,8 +138,8 @@ public class clsejercisio {
              
              else
              {
-                 verdad=false;                 
-                 i=11;
+                 verdad=false;               
+                  break;
              }
              comp=valores;
          }

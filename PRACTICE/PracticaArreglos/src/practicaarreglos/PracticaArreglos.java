@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package practicaarreglos;
 
 import java.util.Scanner;
@@ -21,32 +20,30 @@ public class PracticaArreglos {
         // TODO code application logic here
         int opc;
         Scanner teclado = new Scanner(System.in);
-        clsejercisio oclsejercisio = new clsejercisio(); 
-        do
-        {
-            System.out.println("DIGITE EL EJERCISIO QUE DESEA VER");
-            opc= teclado.nextInt();
-            switch(opc)
-            {
+        clsejercisio oclsejercisio = new clsejercisio();
+        do {
+            System.out.println("DIGITE EL EJERCISIO QUE DESEA VER// 5.SALIR");
+            opc = teclado.nextInt();
+            switch (opc) {
                 case 1:
-             
-     oclsejercisio.AgregarCursoA();
-     oclsejercisio.AgregarCursoB();
-     oclsejercisio.promedio();
+                    oclsejercisio.Agregarvalores();
+                    oclsejercisio.Imprimir();
                     break;
-                    case 2:
-             oclsejercisio.Agregarvalores();
-                        oclsejercisio.Imprimir();
-                        break;
-                    case 3:
-                        oclsejercisio.AgregarOrdenado();
-                        oclsejercisio.Ordenado();
-                        break;
-                    case 4:
-                        oclsejercisio.AgregarvaloresSuma();
-                        oclsejercisio.sumarValores();
-                         
+                case 2:
+                     oclsejercisio.AgregarvaloresSuma();
+                    oclsejercisio.sumarValores();                    
+                    break;
+                case 3:
+                   oclsejercisio.AgregarCursoA();
+                    oclsejercisio.AgregarCursoB();
+                    oclsejercisio.promedio();
+                    break;
+                case 4:
+                    oclsejercisio.AgregarOrdenado();
+                    oclsejercisio.Ordenado();
+                    break;
+
             }
-        }while(opc<=4);
+        } while (opc <= 4);
     }
 }
