@@ -39,6 +39,11 @@ private Scanner teclado;
    }
     public void Intercambiarfila1()
     {
+        /*
+        filas columnas
+        1      1  2 3
+        2
+        */
         
         for (int i = 1; i < 2; i++) {
             for (int j = 0; j < columnas; j++) {
@@ -58,4 +63,14 @@ private Scanner teclado;
         }
         
     }
+    public void filas()
+       {
+        for (int i = 2; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                System.out.print(matriz[i][j]);
+            }
+            System.out.println();
+        }
+        
+    }     
 }

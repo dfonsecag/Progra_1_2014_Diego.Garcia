@@ -38,6 +38,7 @@ public class PracticaMatriz {
         System.out.println("INTERCAMBIO DE POSICIONES DE LA  MATRIZ");
         cls2.Intercambiarfila1();
         cls2.Intercambiarfila2();
+        cls2.filas();
                     break;
                 case 3:
         clsclase3 cls3 = new clsclase3();
