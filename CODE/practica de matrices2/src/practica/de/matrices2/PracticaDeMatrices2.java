@@ -17,6 +17,19 @@ public class PracticaDeMatrices2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        cls cls = new cls();
+        cls.LLenarMatriz();
+        //cls.PromedioMatriz();
+        //cls.MayorImpar();
+        //cls.PromedioPares();
+        //cls.porcentajeImpares();
+        //cls.MayorFila();
+        cls.MenorColumna();
+        //cls.MenorColumna(); quedo faltando
+        //cls.MenorImparFila();
+       // cls.FilasMayorCantidadPares();
+        //cls.SumaFila();
+        
     }
     
 }
